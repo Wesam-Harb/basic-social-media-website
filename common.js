@@ -52,7 +52,7 @@ async function fetchResponse(response, message) {
   await new Promise(() => {
     document.querySelector(".message").style.right = "5%";
     setTimeout(() => {
-      document.querySelector(".message").style.right = "-50%";
+      document.querySelector(".message").style.right = "-200%";
     }, 3000);
   });
 }
@@ -326,6 +326,7 @@ function showMenu() {
     document.querySelector(".bottomMenu").style.bottom = "-250%";
   }
 }
+
 
 
 
