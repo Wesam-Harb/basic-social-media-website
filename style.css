@@ -532,6 +532,10 @@ input[type="file"]::file-selector-button {
   .register,.addPost{
     width:70%;
   }
+  .addPost h4{
+    font-size:1.1rem;
+  }
 }
+
 
 
