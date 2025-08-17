@@ -32,6 +32,7 @@ async function fetchResponse(response, message) {
   await new Promise((res) => {
     if (response.ok) {
       document.querySelector(".message").textContent = message;
+      document.querySelector(".message").style.backgroundColor = "#b1ebb1";
     } else {
       document.querySelector(".message").textContent = json.message;
       document.querySelector(".message").style.backgroundColor = "#ebb3b1";
@@ -326,6 +327,7 @@ function showMenu() {
     document.querySelector(".bottomMenu").style.bottom = "-250%";
   }
 }
+
 
 
 
