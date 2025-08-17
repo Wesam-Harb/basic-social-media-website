@@ -4,6 +4,8 @@ window.onload = function () {
     let data = JSON.parse(window.localStorage.getItem("user"));
     change_UI(data);
   }
+  if (!window.localStorage.getItem("theme"))
+    localStorage.setItem("theme", "light");
   if (localStorage.getItem("theme") == "light") {
     document.querySelector(".theme").src = "icon-sun.svg";
     console.log(localStorage.getItem("theme"));
@@ -322,4 +324,5 @@ function showMenu() {
     document.querySelector(".bottomMenu").style.bottom = "-250%";
   }
 }
+
 
