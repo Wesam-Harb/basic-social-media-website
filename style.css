@@ -529,8 +529,9 @@ input[type="file"]::file-selector-button {
   .container {
     width: 85%;
   }
-  .register{
+  .register,.addPost{
     width:70%;
   }
 }
+
 
