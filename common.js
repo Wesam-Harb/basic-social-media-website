@@ -245,6 +245,8 @@ function change_UI(json) {
     "visibility: hidden;z-index:-1";
   document.body.style.overflow = "";
   document.querySelector("body > nav .avatar").style.display = "block";
+    console.log(json.profile_image);
+
   document.querySelector("body > nav .avatar").src = json.profile_image;
   if (document.querySelector(".leftNav > div a:last-of-type"))
     document.querySelector(".leftNav > div a:last-of-type").style.display =
@@ -324,5 +326,6 @@ function showMenu() {
     document.querySelector(".bottomMenu").style.bottom = "-250%";
   }
 }
+
 
 
