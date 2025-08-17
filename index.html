@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="blackCover">
+      <div class="loader"></div>
+      <div class="login">
+        <header>
+          <h4>Login</h4>
+          <i class="fa fa-close close"></i>
+        </header>
+        <div>
+          <p>Username:</p>
+          <input type="text" class="userName" />
+          <p>Password:</p>
+          <input type="password" class="password" />
+        </div>
+        <footer>
+          <button class="close">Close</button><button class="log">Login</button>
+        </footer>
+      </div>
+      <div class="register">
+        <header>
+          <h4>Register</h4>
+          <i class="fa fa-close close"></i>
+        </header>
+        <div>
+          <p>Profile Image:</p>
+          <input class="file" type="file" accept="image/*" />
+          <p>Name:</p>
+          <input class="name" type="text" />
+          <p>Username:</p>
+          <input class="userName" type="text" />
+          <p>Password:</p>
+          <input type="password" class="password" />
+        </div>
+        <footer>
+          <button class="close">Close</button
+          ><button class="reg">Register</button>
+        </footer>
+      </div>
+      <div class="addPost">
+        <header>
+          <h4>Create A New Post</h4>
+          <i class="fa fa-close close"></i>
+        </header>
+        <div>
+          <p>Title:</p>
+          <input type="text" />
+          <textarea rows="7"></textarea>
+          <p>Image</p>
+          <input type="file" accept="image/*" />
+        </div>
+        <footer>
+          <button class="close">Close</button
+          ><button class="create">Create</button>
+          <button class="edit">Edit</button>
+        </footer>
+      </div>
+    </div>
+    <div class="message"></div>
+    <div class="add-post-button">
+      <span class="icon">+</span>
+      <span class="text">Add New Post</span>
+    </div>
+
+    <nav>
+      <div>
+        <div class="leftNav">
+          <h1>Social</h1>
+          <div>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+          </div>
+        </div>
+        <ul>
+          <img
+            src="icon-sun.svg"
+            alt=""
+            class="theme"
+            onclick="changeTheme()"
+          />
+          <h3 class="loggedName"></h3>
+          <a href="#">
+            <img src="" class="avatar" />
+          </a>
+          <li class="loginBtn">Login</li>
+          <li class="registerBtn">Register</li>
+          <li class="logoutBtn">Logout</li>
+          <i class="fa fa-bars menu" onclick="showMenu()"></i>
+        </ul>
+      </div>
+      <div class="bottomMenu"></div>
+    </nav>
+    <div class="container"></div>
+  </body>
+  <script src="main.js"></script>
+  <script src="common.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</html>

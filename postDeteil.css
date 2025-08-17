@@ -1,0 +1,51 @@
+:root {
+  --body_theme: aliceblue;
+  --rest_theme: white;
+  --font_color: black;
+}
+.container ul {
+  list-style-type: none;
+  margin: 10px 0;
+  background-color: var(--body_theme);
+  color: var(--font_color);
+}
+.container ul li {
+  padding: 5px;
+}
+.container ul li > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container ul li:not(.container li:last-of-type) {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #9f9f9f;
+}
+.container li p {
+  margin: 15px 0;
+}
+.comment {
+  display: flex;
+  margin: 20px 0;
+}
+.comment input {
+  flex: 1;
+  text-indent: 10px;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  border: 1px solid #888;
+  background-color: var(--body_theme);
+  caret-color: var(--font_color);
+}
+.comment button {
+  padding: 10px 5px;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+  border-radius: 0 7px 7px 0;
+  transition: 0.2s;
+}
+.comment button:hover {
+  color: white;
+  background-color: #0d6efd;
+}
