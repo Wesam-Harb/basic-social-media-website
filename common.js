@@ -146,8 +146,11 @@ async function logout() {
     document.querySelector(".loginBtn").style.display = "block";
     document.querySelector(".registerBtn").style.display = "block";
     document.querySelector(".logoutBtn").style.display = "none";
-    document.querySelector(".leftNav > div a:last-of-type").style.display =
-      "none";
+        if (document.querySelector(".leftNav > div a:last-of-type"))
+      document.querySelector(".leftNav > div a:last-of-type").style.display =
+        "none";
+    if (document.querySelector(".menu a:last-of-type"))
+      document.querySelector(".menu a:last-of-type").style.display = "none";
     document.querySelector(".loggedName").textContent = "";
     if (document.querySelector(".comment") != null)
       document.querySelector(".comment").style.display = "none";
@@ -319,3 +322,4 @@ function showMenu() {
     document.querySelector(".bottomMenu").style.bottom = "-250%";
   }
 }
+
